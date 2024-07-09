@@ -257,12 +257,7 @@ section#hero .subheading {
   padding: 0 0.5rem;
   color: #25262a;
   font-weight: bold;
-}
-
-section#hero .subheading:hover {
   border-radius: 0.3rem;
-  -webkit-transition: border-radius 0.5s ease-in-out;
-  transition: border-radius 0.5s ease-in-out;
 }
 
 section#hero .hero-cta {
