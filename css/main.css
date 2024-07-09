@@ -55,12 +55,7 @@ header .logo a {
   text-transform: uppercase;
   border: 0.2rem solid #0faf6c;
   padding: 0.25rem 0.5rem;
-}
-
-header .logo a:hover {
   border-radius: 0.5rem;
-  -webkit-transition: border-radius 0.5s ease-in-out;
-  transition: border-radius 0.5s ease-in-out;
 }
 
 header .open-menu {
