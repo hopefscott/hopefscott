@@ -478,7 +478,7 @@ section#blog .projects-list .project {
   width: 30%;
   overflow: hidden;
   border: 0.2rem solid #0faf6c;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
 }
 
 section#blog .projects-list .project img {
