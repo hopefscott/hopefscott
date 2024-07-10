@@ -927,40 +927,27 @@ footer {
   section#about .my-skills {
     width: 100%;
   }
-  section#projects {
+  
+  section#blog{
+      display: none;
+      padding: 2rem;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  
+  
+  
+  
+  section#resources {
+      display: none;
     padding: 2rem;
     width: 100%;
     overflow: hidden;
     height: auto;
   }
-  section#projects .aesth-img {
-    display: none;
-  }
-  section#projects .projects-intro {
-    width: 100%;
-  }
-  section#projects .projects-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 3rem;
-    width: 100%;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-animation: none;
-            animation: none;
-  }
-  section#projects .projects-list .project {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  section#projects .more-projects-cta {
-    margin-top: 2rem;
-  }
+  
+  
   section#contact {
     display: none;
     width: 100%;

@@ -19,7 +19,6 @@ document.querySelector("footer #year").textContent = footerYear.getFullYear();
 // navLinks
 let navLinks = document.querySelectorAll("nav a");
 const heroSection = document.querySelector("#hero");
-const contactSection = document.querySelector("#contact");
 let current = "current";
 
 navLinks.forEach(
@@ -37,16 +36,41 @@ navLinks.forEach(
 
                 document.querySelector("#hero").style.display = "flex";
                 document.querySelector("#about").style.display = "none";
+                document.querySelector("#blog").style.display = "none";
+                document.querySelector("#resources").style.display = "none";
                 document.querySelector("#contact").style.display = "none";
                 document.querySelector("body").style.background = "#2d2f33";
             } else if (containerId === "about") {
                 document.querySelector("#hero").style.display = "none";
                 document.querySelector("#about").style.display = "flex";
+                document.querySelector("#blog").style.display = "none";
+                document.querySelector("#resources").style.display = "none";
                 document.querySelector("#contact").style.display = "none";
                 document.querySelector("body").style.background = "#25262a";
-            } else {
+            }else if (containerId === "blog") {
+
+                document.querySelector("#hero").style.display = "none";
+
+                document.querySelector("#about").style.display = "none";
+                document.querySelector("#blog").style.display = "flex";
+                document.querySelector("#resources").style.display = "none";
+                document.querySelector("#contact").style.display = "none";
+                document.querySelector("body").style.background = "#25262a";
+            }else if (containerId === "resources") {
+
+                document.querySelector("#hero").style.display = "none";
+
+                document.querySelector("#about").style.display = "none";
+                document.querySelector("#blog").style.display = "none";document.querySelector("#resources").style.display = "flex";
+                document.querySelector("#contact").style.display = "none";
+                document.querySelector("body").style.background = "#25262a";
+            }
+            else {
                 document.querySelector("#hero").style.display = "none";
                 document.querySelector("#about").style.display = "none";
+                document.querySelector("#blog").style.display = "none";
+
+                document.querySelector("#resources").style.display = "none";
                 document.querySelector("#contact").style.display = "block";
                 document.querySelector("body").style.background = "#25262a";
             }
