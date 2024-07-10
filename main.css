@@ -54,8 +54,13 @@ header .logo a {
   color: #0faf6c;
   text-transform: uppercase;
   border: 0.2rem solid #0faf6c;
-  padding: 0.5rem 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+header .logo a:hover {
   border-radius: 0.5rem;
+  -webkit-transition: border-radius 0.5s ease-in-out;
+  transition: border-radius 0.5s ease-in-out;
 }
 
 header .open-menu {
@@ -252,7 +257,12 @@ section#hero .subheading {
   padding: 0 0.5rem;
   color: #25262a;
   font-weight: bold;
-  border-radius: 0.3rem
+}
+
+section#hero .subheading:hover {
+  border-radius: 0.3rem;
+  -webkit-transition: border-radius 0.5s ease-in-out;
+  transition: border-radius 0.5s ease-in-out;
 }
 
 section#hero .hero-cta {
@@ -419,7 +429,7 @@ section#about .expanded-info .introduction .story {
   }
 }
 
-section#blog {
+section#projects {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -432,7 +442,7 @@ section#blog {
   overflow: hidden;
 }
 
-section#blog .aesth-img {
+section#projects .aesth-img {
   position: absolute;
   width: 10rem;
   height: auto;
@@ -441,23 +451,23 @@ section#blog .aesth-img {
   right: 10rem;
 }
 
-section#blog .projects-intro {
+section#projects .projects-intro {
   width: 80%;
   margin: 0 auto;
 }
 
-section#blog .projects-intro .projects-title {
+section#projects .projects-intro .projects-title {
   font-size: 4rem;
   font-weight: 400;
   color: #e3e3e3;
 }
 
-section#blog .projects-intro p {
+section#projects .projects-intro p {
   font-weight: 300;
   margin-top: 1rem;
 }
 
-section#blog .projects-list {
+section#projects .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,7 +483,7 @@ section#blog .projects-list {
           animation: slideInRight 2s ease-in-out forwards;
 }
 
-section#blog .projects-list .project {
+section#projects .projects-list .project {
   position: relative;
   width: 30%;
   overflow: hidden;
@@ -481,13 +491,13 @@ section#blog .projects-list .project {
   border-radius: 1rem;
 }
 
-section#blog .projects-list .project img {
+section#projects .projects-list .project img {
   width: 100%;
   border-radius: 1rem;
   height: 100%;
 }
 
-section#blog .projects-list .project .project-overlay {
+section#projects .projects-list .project .project-overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -501,26 +511,25 @@ section#blog .projects-list .project .project-overlay {
           backdrop-filter: blur(0.5rem);
 }
 
-section#blog .projects-list .project .project-overlay .overlay-header {
+section#projects .projects-list .project .project-overlay .overlay-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
-      -ms-flex-pack: space-between;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   width: 100%;
   padding: 1rem;
 }
 
-
-section#blog .projects-list .project .project-overlay .overlay-header .project-tags {
+section#projects .projects-list .project .project-overlay .overlay-header .project-tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-section#blog .projects-list .project .project-overlay .overlay-header .project-tags li {
+section#projects .projects-list .project .project-overlay .overlay-header .project-tags li {
   margin: 0rem 0.25rem;
   padding: 0.25rem;
   background: #25262a;
@@ -528,26 +537,35 @@ section#blog .projects-list .project .project-overlay .overlay-header .project-t
   border-radius: 0.3rem;
 }
 
-section#blog .projects-list .project .project-overlay .overlay-body {
+section#projects .projects-list .project .project-overlay .overlay-body {
   text-align: center;
-  margin-top: 0.5rem;
-  font-size: 1.3rem;
-  padding: 1rem;
+  margin-top: 7rem;
+  font-size: 2rem;
 }
 
-section#blog .projects-list .project .project-overlay .overlay-body {
-  font-size: 1.6rem;
-}
-
-section#blog .projects-list .project .project-overlay .overlay-body a {
+section#projects .projects-list .project .project-overlay .overlay-body a {
   display: block;
   color: #e3e3e3;
-  font-size: 1.4rem;
-  margin-top: 0.5rem;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
-section#blog .projects-list .project:hover .project-overlay {
+section#projects .projects-list .project:hover .project-overlay {
   height: 100%;
+}
+
+section#projects .more-projects-cta {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+section#projects .more-projects-cta a {
+  color: #0faf6c;
+  text-decoration: underline;
+}
+
+section#projects .more-projects-cta a:hover {
+  color: #e3e3e3;
 }
 
 @-webkit-keyframes slideInRight {
@@ -574,20 +592,6 @@ section#blog .projects-list .project:hover .project-overlay {
             transform: translateX(0%);
     opacity: 1;
   }
-}
-
-
-section#resources {
-    display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 80%;
-  margin: auto;
-  height: 80vh;
-  padding-top: 5rem;
-  overflow: hidden;
 }
 
 section#contact {
@@ -933,19 +937,19 @@ footer {
   section#about .my-skills {
     width: 100%;
   }
-  section#blog {
+  section#projects {
     padding: 2rem;
     width: 100%;
     overflow: hidden;
     height: auto;
   }
-  section#blog .aesth-img {
+  section#projects .aesth-img {
     display: none;
   }
-  section#blog .projects-intro {
+  section#projects .projects-intro {
     width: 100%;
   }
-  section#blog .projects-list {
+  section#projects .projects-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -960,11 +964,11 @@ footer {
     -webkit-animation: none;
             animation: none;
   }
-  section#blog .projects-list .project {
+  section#projects .projects-list .project {
     width: 100%;
     margin-bottom: 2rem;
   }
-  section#blog .more-projects-cta {
+  section#projects .more-projects-cta {
     margin-top: 2rem;
   }
   section#contact {
